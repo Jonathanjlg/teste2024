@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Exclusão de Nível</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Confirmação de Exclusão de Nível</h1>
+        <p>Você está prestes a excluir o nível com os seguintes detalhes:</p>
+        <ul>
+            <li>ID: {{ nivel.id }}</li>
+            <li>Nome: {{ nivel.nome }}</li>
+        </ul>
+        <p>Tem certeza de que deseja continuar?</p>
+        <a class="btn btn-danger" href="excluir_nivel.html">Confirmar Exclusão</a>
+        <a class="btn btn-secondary" href="excluir_nivel.html">Cancelar</a>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

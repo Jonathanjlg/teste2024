@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #2a2a2a;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo {
+            max-width: 100px;
+        }
+        .form-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-group {
+            text-align: center;
+        }
+        .form-control {
+            border-radius: 50px;
+            background-color: #e9f5fe;
+            border: 2px solid #6995BD;
+            padding: 20px;
+            font-size: 1.2rem;
+            color: #6995BD;
+        }
+        .btn-primary {
+            background-color: #6995BD;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+        }
+        .btn-primary:hover {
+            background-color: #567ba7;
+        }
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Alpha Infosystem" class="logo">
+            <h2>Acompanhamento</h2>
+        </div>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="protocolInput" class="h5">Digite o protocolo</label>
+                    <input type="text" class="form-control" id="protocolInput" placeholder="Ex.: 20240607">
+                </div>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Desenvolvido por alunos do SENAC Jessé Freire | Brasília - DF</p>
+        <p>Projeto Integrador | Técnico em informática - 2024</p>
+    </div>
+</body>
+</html>

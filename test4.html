@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #2a2a2a;
+        }
+        .header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logo {
+            max-width: 100px;
+        }
+        .card {
+            margin: 20px auto;
+            max-width: 600px;
+            border: none;
+        }
+        .card-header {
+            background-color: #6995BD;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+        }
+        .status-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        .status-item:last-child {
+            border-bottom: none;
+        }
+        .status-item i, .status-item span.emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .status-item span.emoji {
+            font-size: 1.5rem;
+        }
+        .status-item.completed i {
+            color: #28a745;
+        }
+        .status-item i {
+            color: #6995BD;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Alpha Infosystem" class="logo">
+            <h2>Acompanhamento</h2>
+            <p>Situação do protocolo 20240706:</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Progresso
+            </div>
+            <div class="card-body">
+                <div class="status-item completed">
+                    <span class="emoji">🔄</span>
+                    <span>07/06/2024 - Disponível para retirada</span>
+                </div>
+                <div class="status-item completed">
+                    <span class="emoji">☑️</span>
+                    <span>06/06/2024 - Reparo Finalizado</span>
+                </div>
+                <div class="status-item">
+                    <span class="emoji">💲</span>
+                    <span>04/06/2024 - Reparo autorizado pelo cliente</span>
+                </div>
+                <div class="status-item">
+                    <span class="emoji">🔍</span>
+                    <span>03/06/2024 - Avaliação do técnico</span>
+                </div>
+                <div class="status-item">
+                    <span class="emoji">📥</span>
+                    <span>31/05/2024 - Entrada</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Desenvolvido por alunos do SENAC Jessé Freire | Brasília - DF</p>
+            <p>Projeto Integrador | Técnico em informática - 2024</p>
+        </div>
+    </div>
+</body>
+</html>
